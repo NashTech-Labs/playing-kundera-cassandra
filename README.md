@@ -18,13 +18,13 @@ A simple CRUD application in Play! Framework using Kundera and Cassandra as a Da
 * Install [Cassandra](http://cassandra.apache.org/) if you do not have it already. [Instructions](https://www.digitalocean.com/community/tutorials/how-to-install-cassandra-and-run-a-single-node-cluster-on-a-ubuntu-vps)
 * Start Cassandra Server and create schema/tables
 
-[default@unknown] create keyspace EmployeeExample;
+`[default@unknown] create keyspace EmployeeExample;
 395c9500-bf8d-3985-95a2-ddc055090131
 [default@unknown] use EmployeeExample;
 Authenticated to keyspace: EmployeeExample
 [default@EmployeeExample] create column family employees with comparator=UTF8Type and default_validation_class=UTF8Type and key_validation_class=UTF8Type;
 840d66b1-a54a-329e-9a43-dc9f373e9386
-[default@EmployeeExample] 
+[default@EmployeeExample] `
 
 * Execute `activator clean compile` to build the product
 * Execute `activator start` to execute the product
