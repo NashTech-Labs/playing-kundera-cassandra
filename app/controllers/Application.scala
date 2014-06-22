@@ -150,7 +150,7 @@ class Application(empProcess: EmployeeProcess) extends Controller {
 
     def apply[A](block: => A)(implicit timeout: FiniteDuration): Future[A] = {
 
-      val promise = scala.concurrent.promise[A]()
+      val promise = scala.concurrent.Promise[A]()
 
       // if the promise doesn't have a value yet then this completes the future with a failure
       Promise.timeout(Nil, timeout).map(_ => promise.tryFailure(new TimeoutException("This operation timed out")))

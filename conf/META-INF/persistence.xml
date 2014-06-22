@@ -10,7 +10,7 @@
 		<properties>
 			<property name="kundera.nodes" value="localhost" />
 			<property name="kundera.port" value="9160" />
-			<property name="kundera.keyspace" value="KunderaExamples" />
+			<property name="kundera.keyspace" value="EmployeeExample" />
 			<property name="kundera.dialect" value="cassandra" />
 			<property name="kundera.client.lookup.class" value="com.impetus.client.cassandra.thrift.ThriftClientFactory" />
 			<property name="kundera.cache.provider.class" value="com.impetus.kundera.cache.ehcache.EhCacheProvider" />
