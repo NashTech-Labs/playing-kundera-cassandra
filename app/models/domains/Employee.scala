@@ -28,4 +28,4 @@ class Employee {
     
 }
 
-
+case class EmployeeForm(id: String, name: String, address: String, dob: Date, joiningDate: Date, designation: String)
